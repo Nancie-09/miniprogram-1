@@ -1,0 +1,45 @@
+<view>
+    <view class="book_image">
+        <image src="/images/book.jpg"></image>
+    </view>
+
+    <view class="book_picker">
+        <picker bindchange="bindAddrPickerChange" value="{{addrIndex}}" range="{{addrArray}}">
+            <view>
+                <text>{{addrArray[addrIndex]}}</text>
+            </view>
+        </picker>
+    </view>
+
+    <view class="book_text">
+        <text class="book_title">服务时间</text>
+        <view class="book_sur">
+            <view class="book_date">
+                <image src="../../images/date.png"></image>
+                <picker mode="date" placeholder="选择日期" value="{{date}}" start="2020-10-24" end="2022-10-24" bindchange="bindDateChange" >
+                    <view>
+                        {{date}}
+                    </view>
+                </picker>
+            </view>
+            <view class="book_time">
+                <image src="../../images/time.png"></image>
+                <picker mode="time" placeholder="选择时间" value="{{time}}" start="01:00" end="24:00" bindchange="bindTimeChange">
+                    <view>
+                        {{time}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+
+        <text class="book_title">留言信息</text>
+
+        <input type="text" placeholder="输入信息" class="book_input" placeholder-style="font-family:'微软雅黑'"/>
+
+        <button class="book" bindtap="bindToastTap">确认预定</button>
+        <toast hidden="{{bookToastHidden}}"  bindchange="hideToast">
+        预定成功
+        </toast>
+    </view>
+
+</view>

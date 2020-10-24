@@ -1,0 +1,24 @@
+<view>
+<view class="detail_image">
+    <image src="/images/detail.jpeg"></image>
+</view>
+<view class="detail_text">
+    <text class="detail_title">翡翠烧卖</text>
+    <text class="detail_price">价格：¥38  </text>
+    <text>   
+        此点心是扬州点心双绝之一。皮薄馅绿，色如翡翠，糖油盈口，甜润清香。翡翠烧麦这名号就赋予人想象空间，买相清新可人。擀成菊花边状的面皮包入青菜馅，形如石榴，底若钱币，上端突露如蓬头，点缀上少量火腿茸，色如翡翠，看着就令人愉悦，犹如满园春色关不住。朱自清曾作文赞美道：“滋润利落，决不腻齿腻舌，不但味道鲜美，颜色也靓丽悦目。
+    </text>
+    <view class="detail_line"></view>
+    <text class="detail_title">精选用料</text>
+    <text>
+    1、精面粉
+    2、青菜叶
+    3、绵白糖
+    4、火腿末
+    5、精盐
+    6、食碱
+    7、熟猪油
+    </text>
+    <button class="detail_book" bindtap="bookTap">立即预定</button>
+</view>
+</view>
